@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F53DB33D-216A-490B-8852-17319525E6B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pet_Clinic_Management_System</RootNamespace>
+    <AssemblyName>Pet Clinic Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDoctor.Designer.cs">
+      <DependentUpon>addDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMedicine.Designer.cs">
+      <DependentUpon>addMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPet.Designer.cs">
+      <DependentUpon>addPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminHomePage.Designer.cs">
+      <DependentUpon>adminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteDoctor.Designer.cs">
+      <DependentUpon>deleteDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteMedicine.Designer.cs">
+      <DependentUpon>deleteMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorDetails.Designer.cs">
+      <DependentUpon>doctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorHomePage.Designer.cs">
+      <DependentUpon>doctorHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorlogin.Designer.cs">
+      <DependentUpon>doctorlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issueReceipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issueReceipts.Designer.cs">
+      <DependentUpon>issueReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicineDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medicineDetails.Designer.cs">
+      <DependentUpon>medicineDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newTreatment.Designer.cs">
+      <DependentUpon>newTreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="petDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="petDetails.Designer.cs">
+      <DependentUpon>petDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prescriptionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prescriptionDetails.Designer.cs">
+      <DependentUpon>prescriptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profitOrLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profitOrLoss.Designer.cs">
+      <DependentUpon>profitOrLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receptionistHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionistHomePage.Designer.cs">
+      <DependentUpon>receptionistHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionistLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionistLogin.Designer.cs">
+      <DependentUpon>receptionistLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removePet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removePet.Designer.cs">
+      <DependentUpon>removePet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="treatmentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treatmentHistory.Designer.cs">
+      <DependentUpon>treatmentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="treatmentHistoryAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treatmentHistoryAdmin.Designer.cs">
+      <DependentUpon>treatmentHistoryAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDoctor.Designer.cs">
+      <DependentUpon>updateDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDoctorEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDoctorEmail.Designer.cs">
+      <DependentUpon>updateDoctorEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDoctorName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDoctorName.Designer.cs">
+      <DependentUpon>updateDoctorName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDoctorPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDoctorPassword.Designer.cs">
+      <DependentUpon>updateDoctorPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateMedicine.Designer.cs">
+      <DependentUpon>updateMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateMedicineName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateMedicineName.Designer.cs">
+      <DependentUpon>updateMedicineName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateMedicinePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateMedicinePrice.Designer.cs">
+      <DependentUpon>updateMedicinePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateOwnerAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateOwnerAddress.Designer.cs">
+      <DependentUpon>updateOwnerAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateOwnerName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateOwnerName.Designer.cs">
+      <DependentUpon>updateOwnerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateOwnerPhn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateOwnerPhn.Designer.cs">
+      <DependentUpon>updateOwnerPhn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePet.Designer.cs">
+      <DependentUpon>updatePet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePetDob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePetDob.Designer.cs">
+      <DependentUpon>updatePetDob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePetName.Designer.cs">
+      <DependentUpon>updatePetName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePetType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePetType.Designer.cs">
+      <DependentUpon>updatePetType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePetWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePetWeight.Designer.cs">
+      <DependentUpon>updatePetWeight.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addDoctor.resx">
+      <DependentUpon>addDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addMedicine.resx">
+      <DependentUpon>addMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPet.resx">
+      <DependentUpon>addPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminHomePage.resx">
+      <DependentUpon>adminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteDoctor.resx">
+      <DependentUpon>deleteDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteMedicine.resx">
+      <DependentUpon>deleteMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorDetails.resx">
+      <DependentUpon>doctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorHomePage.resx">
+      <DependentUpon>doctorHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorlogin.resx">
+      <DependentUpon>doctorlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issueReceipts.resx">
+      <DependentUpon>issueReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicineDetails.resx">
+      <DependentUpon>medicineDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newTreatment.resx">
+      <DependentUpon>newTreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="petDetails.resx">
+      <DependentUpon>petDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prescriptionDetails.resx">
+      <DependentUpon>prescriptionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profitOrLoss.resx">
+      <DependentUpon>profitOrLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receptionistHomePage.resx">
+      <DependentUpon>receptionistHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionistLogin.resx">
+      <DependentUpon>receptionistLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removePet.resx">
+      <DependentUpon>removePet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="treatmentHistory.resx">
+      <DependentUpon>treatmentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="treatmentHistoryAdmin.resx">
+      <DependentUpon>treatmentHistoryAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDoctor.resx">
+      <DependentUpon>updateDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDoctorEmail.resx">
+      <DependentUpon>updateDoctorEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDoctorName.resx">
+      <DependentUpon>updateDoctorName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDoctorPassword.resx">
+      <DependentUpon>updateDoctorPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateMedicine.resx">
+      <DependentUpon>updateMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateMedicineName.resx">
+      <DependentUpon>updateMedicineName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateMedicinePrice.resx">
+      <DependentUpon>updateMedicinePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateOwnerAddress.resx">
+      <DependentUpon>updateOwnerAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateOwnerName.resx">
+      <DependentUpon>updateOwnerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateOwnerPhn.resx">
+      <DependentUpon>updateOwnerPhn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePet.resx">
+      <DependentUpon>updatePet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePetDob.resx">
+      <DependentUpon>updatePetDob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePetName.resx">
+      <DependentUpon>updatePetName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePetType.resx">
+      <DependentUpon>updatePetType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePetWeight.resx">
+      <DependentUpon>updatePetWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-portrait-adorable-puppies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adorable-brown-white-basenji-dog-smiling-giving-high-five-isolated-white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-fluffy-domestic-cat-sitting-floor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-fluffy-domestic-cat-sitting-floor1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-asset.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6ibQUt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LowRes-0873-e1581679595542.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iStock-482768159-2000x1331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey-and-White-Bulldog-and-Sausage-Dog-Pattern-Pet-Wallpaper-Mural-Plain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papillion-veterinarian-surgeon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57026686-veterinary-surgeon-treating-dog-in-surgery-healthcare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57026686-veterinary-surgeon-treating-dog-in-surgery-healthcare1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images 6.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10926813.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\546539.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A1WuED4KiRL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beware-online-pet-medicine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hwzSbK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5616727.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papillion-veterinarian-surgeon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alder-veterinary-practice-8843.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-marketing-business-sms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cXZVTQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-with-dog-royalty-free-image-1582281437.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vf-improving-the-cat-owner-experience-445-800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\how-to-be-a-good-neighbor-when-you-have-a-dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1101027.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115488.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-dog-background-for-1080P-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-720980.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QZiHof.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist_wide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NlTi8L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope-with-medical-drug-prescription-on-table-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThAOKju.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2b41a45605b5c1d9bace143c32deb283-700.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
